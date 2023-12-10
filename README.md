@@ -1,11 +1,29 @@
-This is a boiler plate for any REST API client you want to build.
 
-    Follow below steps
+# RSS Aggregator using Go and Postgresql DB
 
-    1. make sure you have following:
-        -- sqlc
-        -- goose
-    2. go mod vendor
-    3. go mod tidy
-    4. go build
-    5. ./rss_aggregator
+    This is a Go server which can automatically extract RSS from multiple feeds.
+    These feeds are posted by users and other users can subscribe to them. 
+
+
+
+    ## Following Operations can be performed:
+
+    * `create new user`
+    * `get user details`
+
+    * `post new feeds`
+    * `get all feeds`
+
+    * `subscribe to feeds`
+    * `unsubscribe to feeds`
+    * `know which feeds a user followed`
+
+    
+
+
+
+    ## Run Project
+
+    1. create a Postgres database and set its url in .env
+    1. go build
+    2. ./rss_aggregator
